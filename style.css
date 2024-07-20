@@ -40,7 +40,7 @@ i {
 }
 .header-button {
   border: 1px solid white;
-  padding: 8px 24px;
+  padding: 8px 18px;
   border-radius: 5px;
   color: white;
   background-color: transparent;
@@ -143,6 +143,31 @@ i {
     width: 100%;
   }
 }
+.about {
+  display: flex;
+  position: absolute;
+  height: 100px;
+}
+.about .about-content {
+  display: flex;
+  position: relative;
+  max-height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+.about .imgContainer img {
+  width: 400px;
+  margin: 0 100px;
+  padding: 0;
+}
+.about .info {
+  display: block;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
 .bg-home::before {
   content: "";
   display: block;
