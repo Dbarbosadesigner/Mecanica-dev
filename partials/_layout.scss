@@ -80,31 +80,53 @@
 //------- ABOUT ----------//
 
 .about {
-  display: flex;
-  position: absolute;
-  height: 100px;
+  background-color: $primary-normal;
+  overflow: hidden;
+  color: $white-normal;
+}
 
   .about-content {
     display: flex;
-    position: relative;
-    max-height: 100px;
     align-items: center;
     justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+    img {
+      max-width: 570px;
+    }
   }
 
-  .imgContainer img {
-    width: 400px;
-    margin: 0 50px;
-    padding: 0;
+  .about-content div {
+    flex: 1;
   }
 
   .info {
-    display: block;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    color: $white-normal;
+    h2 {
+      font-size: 34px;
+      margin-bottom: 24px;
+    }
 
+    p{
+      margin-bottom: 14px;
+      line-height: 150%;
+    }
   }
-}
+
+  @media screen and (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+
+      .info {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+
+    
+
+
+    
+  }
 
