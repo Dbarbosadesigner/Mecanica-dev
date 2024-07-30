@@ -199,4 +199,13 @@
     padding: 3px 5px;
     border: none;
     border-radius: 5px;
+    cursor: default;
+  }
+
+  @media screen and (max-width: 768px) {
+    .tipesServices {
+      display: flex;
+      flex-direction: column;
+      max-width: 345px;
+    }
   }
