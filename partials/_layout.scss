@@ -173,7 +173,7 @@
 
     img {
       width: 100%;
-      max-width: 354px;
+      max-width: 254px;
       transition: transform 0.4s;
     }
 
@@ -209,3 +209,72 @@
       max-width: 345px;
     }
   }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 25px;
+    color: $white-normal;
+
+    .imgLogo {
+      max-width: 200px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .footerIcons {
+    display: flex;
+    gap: 25px;
+  }
+
+  .btnWhatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 24px;
+    z-index: 99;
+
+    img {
+      max-width: 80px;
+      transition: transform 0.5s;
+    }
+
+    img:hover {
+      transform: scale(1.3);
+    }
+
+  }
+
+  .btnWhatsapp .toolTip {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 10px;
+    left: -144px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px;
+    background-color: $black-normal;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .btnWhatsapp:hover .toolTip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    @media screen and (max-width: 768px) {
+      .btnWhatsapp {
+        img {
+          max-width: 50px;
+        }
+      }
+    }
+

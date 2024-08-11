@@ -5,8 +5,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Mecanica</title>
 
@@ -19,7 +21,7 @@
         <header>
 
             <nav class="header-content container">
-                <div class="header-icons">
+                <div class="header-icons" data-aos="fade-down" data-aos="fade-up">
                     <a href="#">
                         <i class="fa-brands fa-instagram fa-2x"></i>
                     </a>
@@ -31,24 +33,24 @@
                     </a>
                 </div>
 
-                <div class="header-logo">
-                    <img src="assets/mecanicaLogo.png" alt="">
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="200">
+                    <img data-aos="zoom-in" data-aos-delay="500" data-aos-duration="1500" src="assets/mecanicaLogo.png" alt="">
                 </div>
 
-                <div>
-                    <a class="header-button" href="#">
+                <div data-aos="fade-down">
+                    <a  target="_blank" class="header-button" href="https://wa.me/5547992069351?text=Olá%20vi%20seu%20site%20e%20desejo%20fazer%20um%20agendamento">
                         Agendar horario
                     </a>
                 </div>
 
             </nav>
 
-            <main class="hero container">
+            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
                 <h1>
                     Agende Seu Serviço Hoje!
                 </h1>
                 <p>Horario de funcionamento de Segunda a Sexta das 07h30 as 18h00</p>
-                <a href="#" class="buttonContact" target="_blank">
+                <a href="https://wa.me/5547992069351?text=Olá%20vi%20seu%20site%20e%20desejo%20fazer%20um%20agendamento" class="buttonContact" target="_blank">
                     Agendar revisão
                 </a>
             </main>
@@ -59,12 +61,12 @@
      <!-- ABOUT -->
      <section class="about">
         <div class="about-content container">
-            <div class="imgContainer">
+            <div class="imgContainer" data-aos="zoom-in-right">
                 <img 
                 src="../Mecanica-dev/assets/serviços.png" 
                 alt="fotos dos mecanicos">
             </div>
-            <div class="info">
+            <div class="info" data-aos="fade-right" data-aos-delay="400" data-aos-duration="1000">
                 <h2>
                     SOBRE
                 </h2>
@@ -77,40 +79,65 @@
 
     <!--Services-->
     <section class="services">
-        <div class="servicesContent container">
+        <div class="servicesContent container" data-aos="fade-down" data-aos-duration="1500">
             <h2>Serviços</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui expedita perspiciatis quas aspernatur magni, sed rem repellat veritatis, obcaecati quaerat eveniet aliquam laudantium asperiores fugit, doloribus aut ducimus perferendis?</p>
 
         </div>
         <section class="tipesServices container">
-            <div class="service">
-                <img src="../Mecanica-dev/assets/img1.jpg" alt="cortando o cabelo">
+            <div class="service" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
+                <img src="../Mecanica-dev/assets/img1.jpg" alt="cortando o cabelo" >
                 <div class="serviceInfo">
                     <strong>Revisão</strong>
                     <button>R$200,00</button>
                 </div>
             </div>
-            <div class="service">
+            <div class="service" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
                 <img src="../Mecanica-dev/assets/img2.jpg" alt="cortando o cabelo">
                 <div class="serviceInfo">
                     <strong>Revisão</strong>
                     <button>R$200,00</button>
                 </div>
             </div>
-            <div class="service">
+            <div class="service" data-aos="fade-up" data-aos-delay="1100" data-aos-duration="1000">
                 <img src="../Mecanica-dev/assets/img3.jpg" alt="cortando o cabelo">
                 <div class="serviceInfo">
                     <strong>Revisão</strong>
                     <button>R$200,00</button>
                 </div>
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
         </section>
     </section>
+    
+    <!--FOOTER-->
+    
+    <div class="services">
+        <h2>venha conhecer</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10048.651184960463!2d-48.87066178914757!3d-27.07012101903697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94df494a7fef55d7%3A0x1051e35f5af343e!2sAlameda%20Ida%20Westarb%2C%20111%20-%20Limeira%2C%20Brusque%20-%20SC%2C%2088356-000!5e0!3m2!1spt-BR!2sbr!4v1723146186988!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer class="footer">
+        <div class="footerIcons">
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+        </div>
+        <div class="imgLogo">
+            <img src="assets/mecanicaLogo.png" alt="Logo mecanica">
+        </div>
+        <p>Copyright 2024 | Dev mecanica - todos os direitos reservados</p>
+    </footer>
+
+    <!--BOTÃO WHATSAPP-->
+    <a href="https://wa.me/5547992069351?text=Olá%20vi%20seu%20site%20e%20desejo%20fazer%20um%20agendamento" class="btnWhatsapp" target="_blank"
+    data-aos="zoom-in" data-aos-duration="300">
+        <img src="../Mecanica-dev/assets/whatssapp.svg" alt="Whatsapp logo">
+        <span class="toolTip">Agende seu horario</span>
+    </a>
+    <script src="script.js"></script>
 </body>
 </html>
